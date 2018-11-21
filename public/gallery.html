@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html >
+
+	<head >
+		<meta charset="utf-8">
+		<title>Kawiarnia</title>
+		<link rel="stylesheet" href="style/style.css">
+		<!-- settings footer -->
+		<style type="text/css">html, body { height: 100%; text-align:center;}</style>
+		<!-- settings slider -->
+    	<link rel="stylesheet" href="style/sliderbjqs.css">
+   		<link rel="stylesheet" href="style/slider.css">
+   		<script src="js/jquery-3.3.1.min.js"></script>
+    	<script src="js/bjqs-1.3.min.js"></script>
+
+
+		
+		
+	</head>
+	<body class="gbg">
+	<div id="container2">
+		<div id="header">
+
+		<header class="top">
+
+			<div class="container">
+				<!-- <div class="logo">
+				<a href="index.html"><img src="img/caffe-logo.png" alt="logo"></a>
+				</div> -->
+				<a href="index.html" class="logo"><img src="img/caffe-logo.png" alt="logo"></a>
+				<div class="main-menu ">
+
+					<ul>
+						<li><a href="offer.html">Oferta</a></li>
+						<li><a href="index.html#komentarze">Rekomendacje</a></li>
+						<li><a href="index.html#namiary">Kontakt</a></li>
+					</ul>				
+				</div>
+			</div>
+		</header>
+		</div>
+		<div id="content">
+			
+			<div id="container">
+		
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade" style="padding-top: 50px;">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="img/slajd1.jpg" ></li>
+          <li><img src="img/slajd2.jpg" ></li>
+          <li><img src="img/slajd3.jpg" ></li>
+          <li><img src="img/slajd4.jpg" ></li>
+          <li><img src="img/slajd5.jpg" ></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+
+    </div>
+		</div>
+		<div id="push"></div>
+	</div>	
+	<!-- footer -->
+	<div id="footer2">
+		<footer class="site-footer">
+			<div class="container">
+				<p>&copy; Dominik Blak 2018</p>
+			</div>
+		</footer>
+	</div>
+	<!-- JS -->
+	 <script >
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+          	animduration : 450, // 450ms dlugosc przejscia
+			animspeed : 3000, // szybkosc animacji w milisekundach
+			nexttext : 'Następne', // przycisk tekstowy nastepny
+			prevtext : 'Poprzednie', // przycisk tekstowy poprzedni
+            height      : 680,
+            width       : 1024,
+            responsive  : true
+            
+          });
+          $("p, h1, h2, h3, h4, a, img, form, button").hide().fadeIn(2000);
+        });
+      </script>
+</body>
+
+
+	
+
+</html>
+
